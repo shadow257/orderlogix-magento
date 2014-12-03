@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <!-- Our Namespace and Module -->
+        <OLX_Checkout>
+            <!-- Whether our module is active: true or false -->
+            <active>true</active>
+            <!-- Which code pool to use: core, community or local -->
+            <codePool>local</codePool>
+        </OLX_Checkout>
+    </modules>
+</config>

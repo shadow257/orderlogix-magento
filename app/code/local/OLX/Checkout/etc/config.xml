@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config> 
+    <modules>
+        <OLX_Checkout>
+            <!-- The version of our module, starting at 0.0.1 -->
+            <version>0.0.2</version>
+        </OLX_Checkout>
+    </modules>
+    <global>
+    	  <helpers>
+            <OLX_Checkout>
+            <class>OLX_Checkout_Helper</class>
+            </OLX_Checkout>
+        </helpers>
+        <models>
+            <OLX_Checkout>
+            <class>OLX_Checkout_Model</class>	
+            </OLX_Checkout>
+        </models>
+        <events>
+         <sales_order_place_after>
+          <observers>
+            <OLX_Checkout_Model_Observer>
+              <class>OLX_Checkout_Model_Observer</class>
+              <method>exportOrder</method>
+            </OLX_Checkout_Model_Observer>
+          </observers>
+         </sales_order_place_after>
+        </events>
+   </global>
+</config>
